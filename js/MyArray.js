@@ -164,7 +164,7 @@ function MyArrayProto() {
       delete this[i];
     }
     this.length = start;
-    this.push(insertItems, endPartOfArray);
+    this.push(...insertItems, endPartOfArray);
     return deletedPartOfArray;
   };
 }

@@ -1,4 +1,3 @@
-
 const labelStyleBasis = 'color:darkcyan;font-size:16px;';
 const taskLabelStyle = labelStyleBasis + 'margin-top:15px;';
 const labelStyle = 'color:darkcyan;';
@@ -100,4 +99,76 @@ console.log(
   labelStyle,
   'sliced array2:',
   slicedArray2
+);
+
+console.log('%c%s', taskLabelStyle, 'Task 5 SPLICE');
+const spliceArray1 = new MyArray(1, 2, 3, 4, 5);
+console.log(
+  '%c%s',
+  labelStyle,
+  'splice array1:',
+  spliceArray1
+);
+const splecedItems1 = spliceArray1.splice(1, 2);
+console.log(
+  '%c%s',
+  labelStyle,
+  'spliced array1:',
+  spliceArray1
+);
+console.log(
+  '%c%s',
+  labelStyle,
+  'spliced items1:',
+  splecedItems1
+);
+const spliceArray2 = new MyArray(1, 2, 3, 4, 5);
+console.log(
+  '%c%s',
+  labelStyle,
+  'splice array2:',
+  spliceArray2
+);
+const splecedItems2 = spliceArray2.splice(1, 3);
+console.log(
+  '%c%s',
+  labelStyle,
+  'spliced array2:',
+  spliceArray2
+);
+console.log(
+  '%c%s',
+  labelStyle,
+  'spliced items2:',
+  splecedItems2
+);
+const spliceArray3 = new MyArray(1, 2, 3, 4, 5);
+console.log(
+  '%c%s',
+  labelStyle,
+  'splice array3:',
+  spliceArray3
+);
+spliceArray3.splice(3, 0, ['a', 'b', 'c']);
+console.log(
+  '%c%s',
+  labelStyle,
+  'spliced array3:',
+  spliceArray3
+);
+const spliceArray4 = new MyArray(1, 2, 3, 4, 5);
+console.log(
+  '%c%s',
+  labelStyle,
+  'splice array4:',
+  spliceArray4
+);
+spliceArray4.splice(5, 0, 'e');
+spliceArray4.splice(4, 0, 'c');
+spliceArray4.splice(1, 0, 'a', 'b');
+console.log(
+  '%c%s',
+  labelStyle,
+  'spliced array4:',
+  spliceArray4
 );
