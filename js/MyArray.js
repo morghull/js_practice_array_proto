@@ -167,6 +167,21 @@ function MyArrayProto() {
     this.push(...insertItems, endPartOfArray);
     return deletedPartOfArray;
   };
+  this.sort = function () {
+    let prev = this[0];
+    for (let i = 0; i < this.length; i++) {
+      if (i === 0) {
+        prev = this[i];
+        continue;
+      }
+      if (this[i] < prev) {
+        this[i - 1] = this[i];
+        this[i] = prev;
+        i = 0;
+      }
+    }
+    return this;
+  };
 }
 /*data*/
 function MyArray() {

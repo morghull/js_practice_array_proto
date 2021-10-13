@@ -172,3 +172,8 @@ console.log(
   'spliced array4:',
   spliceArray4
 );
+
+console.log('%c%s', taskLabelStyle, 'Task 6 SORT');
+const sortArray = new MyArray(3, 4, 1, 2, 7);
+console.log('%c%s', labelStyle, 'before:', sortArray);
+console.log(sortArray.sort());
