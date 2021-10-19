@@ -56,14 +56,14 @@ const shiftedItem = shiftArray.shift();
 console.log('%c%s', labelStyle, 'shifted element:', shiftedItem);
 console.log('%c%s', labelStyle, 'shifted:', shiftArray);
 
-console.log('%c%s', taskLabelStyle, 'Task 5 POP');
+console.log('%c%s', taskLabelStyle, 'Task 6 POP');
 const popArray = new MyArray('js', 'css', 'html');
 console.log('%c%s', labelStyle, 'before:', popArray);
 const popedItem = popArray.pop();
 console.log('%c%s', labelStyle, 'shifted element:', popedItem);
 console.log('%c%s', labelStyle, 'shifted:', popArray);
 
-console.log('%c%s', taskLabelStyle, 'Task 5 SLICE');
+console.log('%c%s', taskLabelStyle, 'Task 7-8 SLICE');
 const sliceArray = new MyArray(1, 2, 3, 4, 5);
 const slicedArray1 = sliceArray.slice(1, 3);
 const slicedArray2 = sliceArray.slice(4, 5);
@@ -71,7 +71,7 @@ console.log('%c%s', labelStyle, 'slice array:', sliceArray);
 console.log('%c%s', labelStyle, 'sliced array1:', slicedArray1);
 console.log('%c%s', labelStyle, 'sliced array2:', slicedArray2);
 
-console.log('%c%s', taskLabelStyle, 'Task 5 SPLICE');
+console.log('%c%s', taskLabelStyle, 'Task 9-12 SPLICE');
 const spliceArray1 = new MyArray(1, 2, 3, 4, 5);
 console.log('%c%s', labelStyle, 'splice array1:', spliceArray1);
 const splecedItems1 = spliceArray1.splice(1, 2);
@@ -93,7 +93,13 @@ spliceArray4.splice(4, 0, 'c');
 spliceArray4.splice(1, 0, 'a', 'b');
 console.log('%c%s', labelStyle, 'spliced array4:', spliceArray4);
 
-console.log('%c%s', taskLabelStyle, 'Task 6 SORT');
-const sortArray = new MyArray(1, 3, 4, 1, 2, 44, 7);
+console.log('%c%s', taskLabelStyle, 'Task 13 SORT');
+const sortArray = new MyArray(3, 4, 1, 2, 7);
 console.log('%c%s', labelStyle, 'before:', sortArray);
 console.log('%c%s', labelStyle, 'after:', sortArray.sort());
+
+console.log('%c%s', taskLabelStyle, 'Task 14 Object.keys()');
+const t14Obj = { js: 'test', jq: 'hello', css: 'world' };
+console.log('%c%s', labelStyle, 'object:', t14Obj);
+const t14KeysArr = Object.keys(t14Obj);
+console.log('%c%s', labelStyle, 'keys array:', t14KeysArr);
