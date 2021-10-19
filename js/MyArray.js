@@ -171,7 +171,6 @@ function MyArrayProto() {
     let prev = this[0];
     for (let i = 0; i < this.length; i++) {
       if (i === 0) {
-        prev = this[i];
         continue;
       }
       if (this[i] < prev) {
@@ -179,6 +178,7 @@ function MyArrayProto() {
         this[i] = prev;
         i = 0;
       }
+      prev = this[i];
     }
     return this;
   };
