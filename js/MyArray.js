@@ -5,7 +5,7 @@ function MyArrayProto() {
   //   args.forEach((item) => {
   //     if (
   //       item instanceof MyArray ||
-  //       item.constructor === Array
+  //       item instanceof Array
   //     ) {
   //       item.forEach((subitem) => {
   //         this[this.length++] = subitem;
@@ -18,7 +18,7 @@ function MyArrayProto() {
     for (let i = 0; i < arguments.length; i++) {
       if (
         arguments[i] instanceof MyArray ||
-        arguments[i].constructor === Array
+        arguments[i] instanceof Array
       ) {
         for (let j = 0; j < arguments[i].length; j++) {
           this[this.length++] = arguments[i][j];
@@ -38,7 +38,7 @@ function MyArrayProto() {
     for (let i = arguments.length - 1; i >= 0; i--) {
       if (
         arguments[i] instanceof MyArray ||
-        arguments[i].constructor === Array
+        arguments[i] instanceof Array
       ) {
         for (let j = arguments[i].length - 1; j >= 0; j--) {
           let value = arguments[i][j];
