@@ -21,5 +21,7 @@ const minValue = (arr) => extremum(arr, 'min');
 
 const maxValue = (arr) => extremum(arr, 'max');
 
-const averageValue = (arr) =>
-  arr.reduce((prev, curr) => prev + curr) / arr.length;
+const averageValue = (arr) => {
+  if (arr.length === 0) return null;
+  return arr.reduce((prev, curr) => prev + curr) / arr.length;
+};
